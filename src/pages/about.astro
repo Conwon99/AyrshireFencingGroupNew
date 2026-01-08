@@ -1,0 +1,25 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/pages/about/sections/Hero";
+import { AboutSection } from "@/pages/about/sections/AboutSection";
+import { ValuesSection } from "@/pages/about/sections/ValuesSection";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout 
+  title="About Us - Ayrshire Fencing Group | Experienced Fencing Contractors in Ayrshire"
+  description="Learn about Ayrshire Fencing Group - experienced fencing contractors serving Ayrshire and Glasgow. Fully qualified and insured with 13+ years of experience in fencing, decking, gates, sheds, and garden rooms."
+  canonical="https://www.ayrshirefencinggroup.com/about"
+>
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:load />
+      <Hero client:load />
+      <AboutSection client:load />
+      <ValuesSection client:load />
+      <CTASection client:load />
+      <Footer client:load />
+    </div>
+</BaseLayout>
+

@@ -1,0 +1,242 @@
+GOOGLE BUSINESS PROFILE - CATEGORIES & SERVICES (CLEANED)
+Ayrshire Fencing Group
+==================================================
+
+PRIMARY CATEGORY:
+• Fence contractor
+
+ADDITIONAL CATEGORIES:
+• Contractor
+• Deck builder
+• Shed builder
+• Garage builder
+• General Contractor
+• Landscape designer
+• Landscape architect
+• Construction Company
+
+==================================================
+
+SERVICES BY CATEGORY:
+
+FENCE CONTRACTOR (PRIMARY):
+- Aluminium fence installation
+- Chain link fence installation
+- Custom fence construction
+- Deer fencing and ranch rail installation
+- Dog fence installation
+- Fence design
+- Fence installation
+- Iron fence installation
+- Pool fence installation
+- Privacy fence installation
+- Security fencing and metal cage installation
+- Vinyl fence installation
+- Wood fence installation
+- Fence repair
+- Fence replacement
+- Garden fence installation
+- Composite fencing installation
+- Concrete fence installation
+- Decorative panels
+- Domestic and commercial fencing
+- Metal fencing
+- Metal fence installation
+- Gate installation
+
+CONTRACTOR (ADDITIONAL):
+- Deck construction
+- Patio construction
+
+DECK BUILDER (ADDITIONAL):
+- Composite decks
+- Deck cleaning
+- Deck design
+- Deck installation
+- Deck painting
+- Deck railing repair
+- Deck refinishing
+- Deck remodelling
+- Deck repair
+- Deck replacement
+- Patio decks
+- Timber decking
+
+SHED BUILDER (ADDITIONAL):
+- Cabin design and building
+- Custom shed design
+- Shed installation
+- Storage shed design and building
+
+GARAGE BUILDER (ADDITIONAL):
+- (Category only - no specific services listed)
+
+GENERAL CONTRACTOR (ADDITIONAL):
+- (Services overlap with Contractor - see Contractor category)
+
+LANDSCAPE DESIGNER (ADDITIONAL):
+- Landscape installations
+- Outdoor step construction
+- Patio design
+
+LANDSCAPE ARCHITECT (ADDITIONAL):
+- (Services overlap with Landscape Designer - see Landscape Designer category)
+
+CONSTRUCTION COMPANY (ADDITIONAL):
+- Repairs and maintenance
+
+ADDITIONAL SERVICES:
+- Garden room installation
+
+==================================================
+
+SERVICE-TO-CATEGORY ASSIGNMENTS:
+
+FENCE CONTRACTOR (PRIMARY):
+- Aluminium fence installation
+- Chain link fence installation
+- Custom fence construction
+- Deer fencing and ranch rail installation
+- Dog fence installation
+- Fence design
+- Fence installation
+- Iron fence installation
+- Pool fence installation
+- Privacy fence installation
+- Security fencing and metal cage installation
+- Vinyl fence installation
+- Wood fence installation
+- Fence repair
+- Fence replacement
+- Garden fence installation
+- Composite fencing installation
+- Concrete fence installation
+- Decorative panels
+- Domestic and commercial fencing
+- Metal fencing
+- Metal fence installation
+- Gate installation
+
+CONTRACTOR:
+- Deck construction
+- Patio construction
+
+DECK BUILDER:
+- Composite decks
+- Deck cleaning
+- Deck design
+- Deck installation
+- Deck painting
+- Deck railing repair
+- Deck refinishing
+- Deck remodelling
+- Deck repair
+- Deck replacement
+- Patio decks
+- Timber decking
+
+SHED BUILDER:
+- Cabin design and building
+- Custom shed design
+- Shed installation
+- Storage shed design and building
+
+GARAGE BUILDER:
+- (Category only - no specific services listed)
+
+GENERAL CONTRACTOR:
+- (Note: Services overlap with Contractor category. Consider removing this category or consolidating.)
+
+LANDSCAPE DESIGNER:
+- Landscape installations
+- Outdoor step construction
+- Patio design
+
+LANDSCAPE ARCHITECT:
+- (Note: Services overlap with Landscape Designer category. Consider removing this category or consolidating.)
+
+CONSTRUCTION COMPANY:
+- Repairs and maintenance
+
+UNASSIGNED SERVICES:
+- Garden room installation
+
+==================================================
+
+CHANGES MADE (DUPLICATES REMOVED):
+
+FENCE CONTRACTOR:
+✓ Removed duplicate: "Chainlink Fencing Installation" (kept "Chain link fence installation")
+✓ Removed duplicate: "Fence Replacement" (kept "Fence replacement")
+✓ Removed duplicate: "Garden Fencing Installation" (kept "Garden fence installation")
+✓ Consolidated: "Fence repair" + "Fence Repair And Maintenance" → "Fence repair"
+✓ Consolidated: "General repairs & maintenance" + "Maintenance Work" → Removed (covered by "Fence repair")
+✓ Consolidated: "Composite Fencing Installation" + "Composite Fencing" → "Composite fencing installation"
+✓ Removed generic: "Installation And Repair" (too vague)
+✓ Removed non-service: "Commercial Properties" (property type, not a service)
+✓ Removed non-service: "Boundary Fence" (fence type, not a service)
+✓ Removed generic: "Home Fencing Services" (too vague)
+✓ Removed vague: "Fence And Gate" (gate installation is separate)
+✓ Standardized: "Concrete Fence Installation" → "Concrete fence installation"
+✓ Standardized: "Decorative Panels" → "Decorative panels"
+✓ Standardized: "Domestic And Commercial Fencing" → "Domestic and commercial fencing"
+✓ Standardized: "Metal Fencing" → "Metal fencing"
+✓ Standardized: "Metal Fence Installation" → "Metal fence installation"
+✓ Added: "Gate installation" (was in unassigned, belongs in Fence Contractor)
+
+DECK BUILDER:
+✓ Removed duplicate: "Decking Installation" (kept "Deck installation")
+✓ Standardized: "Timber Decking" → "Timber decking"
+
+CROSS-CATEGORY DUPLICATES:
+✓ "Deck construction" - Kept in Contractor only (removed from General Contractor and Construction Company)
+✓ "Patio construction" - Kept in Contractor only (removed from General Contractor and Construction Company)
+✓ "Patio design" - Kept in Landscape Designer only (removed from Landscape Architect)
+✓ "Landscape installations" - Kept in Landscape Designer only (removed from Landscape Architect)
+✓ "Outdoor step construction" - Kept in Landscape Designer only (removed from Landscape Architect)
+
+CONSTRUCTION COMPANY:
+✓ Kept only unique service: "Repairs and maintenance"
+
+UNASSIGNED SERVICES:
+✓ "Garden room installation" - Remains unassigned (could be assigned to General Contractor or Construction Company)
+
+==================================================
+
+FINAL SERVICE COUNT:
+
+FENCE CONTRACTOR: 23 services (down from 34)
+CONTRACTOR: 2 services
+DECK BUILDER: 12 services (down from 13)
+SHED BUILDER: 4 services
+GARAGE BUILDER: 0 services (category only)
+GENERAL CONTRACTOR: 0 services (overlaps with Contractor)
+LANDSCAPE DESIGNER: 3 services
+LANDSCAPE ARCHITECT: 0 services (overlaps with Landscape Designer)
+CONSTRUCTION COMPANY: 1 service
+UNASSIGNED: 1 service
+
+TOTAL UNIQUE SERVICES: 46 services (down from ~60+ with duplicates)
+
+==================================================
+
+RECOMMENDATIONS:
+
+1. Consider removing "General Contractor" category (services overlap with "Contractor")
+2. Consider removing "Landscape Architect" category (services overlap with "Landscape Designer")
+3. Assign "Garden room installation" to an appropriate category (e.g., Construction Company or General Contractor)
+4. Consider if "Garage builder" category is needed if no services are listed
+5. All services are now unique with no duplicates
+6. All services are properly formatted (lowercase except proper nouns)
+
+==================================================
+
+NOTES:
+- All duplicates have been removed
+- Overlapping services have been consolidated
+- Generic/vague services have been removed
+- Non-services (property types) have been removed
+- Services are standardized to consistent formatting
+- This cleaned list is ready for Google Business Profile implementation
+
+

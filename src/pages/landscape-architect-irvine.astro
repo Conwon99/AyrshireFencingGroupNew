@@ -1,0 +1,40 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/pages/services/sections/Hero";
+import { ServicesSection } from "@/pages/services/sections/ServicesSection";
+import { WhyChooseSection } from "@/pages/services/sections/WhyChooseSection";
+import { FAQSection } from "@/pages/services/sections/FAQSection";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout title="Landscape Architect Ayrshire | Professional Landscape Design | Ayrshire Fencing Group">
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:load />
+      <Hero client:load />
+      <section class="box-border caret-transparent pt-5 md:pt-0">
+        <div class="box-border caret-transparent max-w-[1540px] mx-auto px-[15px] md:px-[30px]">
+          <div class="text-white text-center mb-10">
+            <h1 class="text-4xl font-bold mb-4 md:text-5xl">Landscape Architect in Ayrshire</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto">
+              As landscape architects in Ayrshire, Ayrshire Fencing Group designs outdoor spaces that are both functional and beautiful, creating cohesive landscapes that enhance your property's value and appeal.
+            </p>
+          </div>
+          <div class="text-white mb-8">
+            <h2 class="text-2xl font-bold mb-4 md:text-3xl md:mb-6">Landscape Architecture Services</h2>
+            <p class="text-lg md:text-xl mb-6 md:mb-8">
+              Our landscape architecture services in Ayrshire and Glasgow work with you to create outdoor environments that meet your needs and exceed your expectations. We design comprehensive outdoor spaces that integrate fencing, decking, pathways, planting areas, and structures into cohesive, beautiful landscapes. Our landscape architects understand how to create outdoor spaces that enhance your property's value and provide years of enjoyment.
+            </p>
+          </div>
+        </div>
+      </section>
+      <ServicesSection client:load />
+      <WhyChooseSection client:load />
+      <FAQSection client:load />
+      <CTASection client:load />
+      <Footer client:load />
+    </div>
+</BaseLayout>
+
+

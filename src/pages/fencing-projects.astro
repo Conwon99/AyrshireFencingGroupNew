@@ -1,0 +1,23 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/pages/projects/sections/Hero";
+import { FencingProjectsGrid } from "@/pages/fencing-projects/sections/FencingProjectsGrid";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout 
+  title="Fencing Projects Ayrshire | Completed Fencing Installations | Ayrshire Fencing Group"
+  description="View our completed fencing projects in Ayrshire. Professional fencing installations showcasing quality materials, expert craftsmanship, and secure boundary solutions."
+  canonical="https://www.ayrshirefencinggroup.com/fencing-projects"
+>
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:load />
+      <Hero title="Fencing Projects" client:load />
+      <FencingProjectsGrid client:load />
+      <CTASection client:load />
+      <Footer client:load />
+    </div>
+</BaseLayout>
+

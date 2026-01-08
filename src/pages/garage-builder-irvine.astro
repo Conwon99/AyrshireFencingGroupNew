@@ -1,0 +1,40 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/pages/services/sections/Hero";
+import { ServicesSection } from "@/pages/services/sections/ServicesSection";
+import { WhyChooseSection } from "@/pages/services/sections/WhyChooseSection";
+import { FAQSection } from "@/pages/services/sections/FAQSection";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout title="Garage Builder Ayrshire | Professional Garage Construction | Ayrshire Fencing Group">
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:load />
+      <Hero client:load />
+      <section class="box-border caret-transparent pt-5 md:pt-0">
+        <div class="box-border caret-transparent max-w-[1540px] mx-auto px-[15px] md:px-[30px]">
+          <div class="text-white text-center mb-10">
+            <h1 class="text-4xl font-bold mb-4 md:text-5xl">Professional Garage Builder in Ayrshire</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto">
+              As professional garage builders in Ayrshire, Ayrshire Fencing Group designs and constructs custom garages tailored to your specific requirements. We provide quality garage building services for secure vehicle storage and additional workspace.
+            </p>
+          </div>
+          <div class="text-white mb-8">
+            <h2 class="text-2xl font-bold mb-4 md:text-3xl md:mb-6">Garage Builder Services</h2>
+            <p class="text-lg md:text-xl mb-6 md:mb-8">
+              Our professional garage building services in Ayrshire and Glasgow provide custom garages designed and built to match your specific requirements. Our experienced garage builders work with you to create practical, secure storage solutions for vehicles, tools, and equipment. From design to construction, we ensure quality craftsmanship and attention to detail, providing garages that are built to last and complement your property.
+            </p>
+          </div>
+        </div>
+      </section>
+      <ServicesSection client:load />
+      <WhyChooseSection client:load />
+      <FAQSection client:load />
+      <CTASection client:load />
+      <Footer client:load />
+    </div>
+</BaseLayout>
+
+

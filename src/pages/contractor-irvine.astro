@@ -1,0 +1,50 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/pages/services/sections/Hero";
+import { ServicesSection } from "@/pages/services/sections/ServicesSection";
+import { WhyChooseSection } from "@/pages/services/sections/WhyChooseSection";
+import { FAQSection } from "@/pages/services/sections/FAQSection";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout title="Contractor Ayrshire | Professional Construction Services | Ayrshire Fencing Group">
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:load />
+      <Hero client:load />
+      <section class="box-border caret-transparent pt-5 md:pt-0">
+        <div class="box-border caret-transparent max-w-[1540px] mx-auto px-[15px] md:px-[30px]">
+          <div class="text-white text-center mb-10">
+            <h1 class="text-4xl font-bold mb-4 md:text-5xl">Professional Contractor in Ayrshire</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto">
+              As experienced contractors in Ayrshire, Ayrshire Fencing Group provides comprehensive construction and installation services including fencing, decking, gates, sheds, and garden rooms. We serve residential and commercial clients throughout Ayrshire and Glasgow.
+            </p>
+          </div>
+          <div class="text-white mb-8">
+            <h2 class="text-2xl font-bold mb-4 md:text-3xl md:mb-6">Contractor Services</h2>
+            <p class="text-lg md:text-xl mb-6 md:mb-8">
+              Our professional contractors in Ayrshire offer a full range of outdoor construction services. With over 13 years of experience, we are fully qualified and insured, providing quality workmanship and reliable service for all your outdoor construction needs.
+            </p>
+
+            <h3 class="text-xl font-bold mb-3 md:text-2xl md:mb-4">Deck Construction</h3>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              Professional deck construction services in Ayrshire and Glasgow. We build decks from scratch, planning everything properly so it lasts. Deck construction in Ayrshire means using materials that can handle our weather. Whether you need a small garden deck or a large commercial decking area, we have the expertise to deliver quality results. <a href="/service/deck-construction-irvine" class="text-[#787e59] hover:underline font-medium">Learn more about deck construction</a>.
+            </p>
+
+            <h3 class="text-xl font-bold mb-3 md:text-2xl md:mb-4">Patio Construction</h3>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              Patio construction gives you a solid outdoor area. We build patios using paving stones, concrete, or other materials. Patio construction needs proper base preparation, especially in areas with heavy rain like we get in Ayrshire. Our expert contractors ensure your patio is built to last and provides a beautiful outdoor space for years to come. <a href="/service/patio-construction-irvine" class="text-[#787e59] hover:underline font-medium">Discover patio construction services</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+      <ServicesSection client:load />
+      <WhyChooseSection client:load />
+      <FAQSection client:load />
+      <CTASection client:load />
+      <Footer client:load />
+    </div>
+</BaseLayout>
+
+

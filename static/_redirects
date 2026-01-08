@@ -1,0 +1,12 @@
+# Netlify redirects file
+# This ensures all routes work correctly
+
+# Ensure robots.txt and sitemap.xml are accessible
+/robots.txt   /robots.txt   200
+/sitemap.xml  /sitemap.xml  200
+/favicon.ico  /favicon.ico  200
+
+# Prevent 404s for common requests
+/admin/*      /index.html   404
+/api/*        /index.html   404
+

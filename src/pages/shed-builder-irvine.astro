@@ -1,0 +1,59 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/pages/services/sections/Hero";
+import { ServicesSection } from "@/pages/services/sections/ServicesSection";
+import { WhyChooseSection } from "@/pages/services/sections/WhyChooseSection";
+import { FAQSection } from "@/pages/services/sections/FAQSection";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout title="Shed Builder Ayrshire | Custom Shed Installation | Ayrshire Fencing Group">
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:load />
+      <Hero client:load />
+      <section class="box-border caret-transparent pt-5 md:pt-0">
+        <div class="box-border caret-transparent max-w-[1540px] mx-auto px-[15px] md:px-[30px]">
+          <div class="text-white text-center mb-10">
+            <h1 class="text-4xl font-bold mb-4 md:text-5xl">Expert Shed Builder in Ayrshire</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto">
+              As professional shed builders in Ayrshire, Ayrshire Fencing Group designs and installs custom sheds tailored to your requirements. We provide quality shed building services for storage and garden use.
+            </p>
+          </div>
+          <div class="text-white mb-8">
+            <h2 class="text-2xl font-bold mb-4 md:text-3xl md:mb-6">Shed Builder Services</h2>
+            <p class="text-lg md:text-xl mb-6 md:mb-8">
+              Our professional shed building services in Ayrshire and Glasgow provide custom sheds designed and built to match your specific requirements. Our experienced shed builders work with you to create practical, attractive storage solutions that enhance your property's functionality. From design to installation, we ensure quality craftsmanship and attention to detail, providing sheds that are built to last and complement your property.
+            </p>
+
+            <h3 class="text-xl font-bold mb-3 md:text-2xl md:mb-4">Shed Installation</h3>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              Expert shed installation services in Ayrshire and Glasgow providing professional installation of custom sheds for storage and garden use. Our shed installation process ensures that your new shed is properly positioned, secured, and finished to the highest standards. We handle everything from site preparation to final installation, ensuring your shed is ready for immediate use and provides the storage space you need for your property. <a href="/service/sheds" class="text-[#787e59] hover:underline font-medium">Get started with shed installation</a>.
+            </p>
+
+            <h3 class="text-xl font-bold mb-3 md:text-2xl md:mb-4">Cabin Design and Building</h3>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              Professional cabin design and building services in Ayrshire. We design and build custom cabins for various uses including garden offices, workshops, and storage. Our cabin building services provide durable, well-designed structures that meet your specific needs. <a href="/service/cabin-design-and-building-irvine" class="text-[#787e59] hover:underline font-medium">Learn more about cabin design and building</a>.
+            </p>
+
+            <h3 class="text-xl font-bold mb-3 md:text-2xl md:mb-4">Custom Shed Design</h3>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              Custom shed design services in Ayrshire. We work with you to design sheds that perfectly match your requirements, property style, and available space. Our custom shed designs ensure you get exactly what you need for your storage or workspace needs. <a href="/service/custom-shed-design-irvine" class="text-[#787e59] hover:underline font-medium">Discover custom shed design services</a>.
+            </p>
+
+            <h3 class="text-xl font-bold mb-3 md:text-2xl md:mb-4">Storage Shed Design and Building</h3>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              Professional storage shed design and building in Ayrshire. We design and build storage sheds that provide secure, organized storage solutions for your garden tools, equipment, and belongings. Our storage sheds are built to last and provide maximum functionality. <a href="/service/storage-shed-design-and-building-irvine" class="text-[#787e59] hover:underline font-medium">Explore storage shed options</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+      <ServicesSection client:load />
+      <WhyChooseSection client:load />
+      <FAQSection client:load />
+      <CTASection client:load />
+      <Footer client:load />
+    </div>
+</BaseLayout>
+

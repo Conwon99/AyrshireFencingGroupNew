@@ -1,0 +1,21 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { HeroSection } from "@/pages/contact/sections/HeroSection";
+import { FAQSection } from "@/pages/contact/sections/FAQSection";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout 
+  title="Contact Us - Ayrshire Fencing Group | Get Your Free Quote Today"
+  description="Contact Ayrshire Fencing Group for your fencing and decking needs. Get a free quote today. Serving Ayrshire and Glasgow. Call 07926 592704 or fill out our contact form."
+  canonical="https://www.ayrshirefencinggroup.com/contact"
+>
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:load />
+      <HeroSection client:load />
+      <FAQSection client:load />
+      <Footer client:load />
+    </div>
+</BaseLayout>
+

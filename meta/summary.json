@@ -1,0 +1,51 @@
+{
+  "total_posts": 20,
+  "project_posts": 8,
+  "organized_projects": 7,
+  "output_directory": "meta",
+  "organized_at": "2025-11-22T18:11:38.419432",
+  "projects": [
+    {
+      "number": 1,
+      "path": "meta\\project_001_another-job-just-recently-completed-new-roughcast-",
+      "url": "https://www.facebook.com/garynixonrooofing/posts/pfbid0CoYWNDwzwx66tpaCqXGgwsSC9H5Kv4g1AWTDcbkmWZTCNFc6pMjD7fhYxvFeXyysl",
+      "image_count": 0
+    },
+    {
+      "number": 2,
+      "path": "meta\\project_002_another-job-just-recently-completed-new-roughcast-",
+      "url": "https://www.facebook.com/garynixonrooofing/posts/pfbid02Gcuqqou1KgiG9SVoBEY1GxdzduAd16q4X5r6wJRfB86UVMDhubmx1wHRioXuVKAml",
+      "image_count": 0
+    },
+    {
+      "number": 3,
+      "path": "meta\\project_003_new-roof-recently-just-completed-new-roof-faicas-s",
+      "url": "https://www.facebook.com/garynixonrooofing/posts/pfbid015AXVbx5D15w1B6LijkaRWYbKmKNpERJid7zoZpyV5w78mRAuaoUd28kUBsdmVhkl",
+      "image_count": 0
+    },
+    {
+      "number": 4,
+      "path": "meta\\project_004_new-roof-recently-just-completed-new-roof-faicas-s",
+      "url": "https://www.facebook.com/garynixonrooofing/posts/pfbid0TfYEqt58a4BSxwrKtX1DxpXggjoh14vWMCTKbsdhG3XU9pRFJTvQfTAmWLrTCnHul",
+      "image_count": 0
+    },
+    {
+      "number": 5,
+      "path": "meta\\project_005_another-job-recently-just-completed-new-roof-rough",
+      "url": "https://www.facebook.com/garynixonrooofing/posts/pfbid0v9aZzQRG67ppt4KkqSvYjSftd2s4ojpcZXhyz12EJxj31FpijvMC1hPUtZ59tfp7l",
+      "image_count": 0
+    },
+    {
+      "number": 7,
+      "path": "meta\\project_007_new-slate-roof-recently-completed-new-roof-all-new",
+      "url": "https://www.facebook.com/garynixonrooofing/posts/pfbid02zshKMsuQsBCqzni1NAY3LGFZoEPM95k6hRdhxrRgMw3xrdjE4qr68igA5XebpS8Nl",
+      "image_count": 0
+    },
+    {
+      "number": 8,
+      "path": "meta\\project_008_any-leaking-roofs-storm-damage-get-in-touch-asp-bo",
+      "url": "https://www.facebook.com/garynixonrooofing/posts/pfbid0cLfqRa8qZywJrP9sJPKbz6UJb8CNhj8y5bHpdXREFMy4LmCFStXBDwy5sEt3bYd7l",
+      "image_count": 0
+    }
+  ]
+}

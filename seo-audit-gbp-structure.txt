@@ -1,0 +1,239 @@
+GOOGLE BUSINESS PROFILE SEO STRUCTURE AUDIT
+Ayrshire Fencing Group
+City: Irvine, Ayrshire
+==================================================
+
+GBP CATEGORIES:
+PRIMARY: Fence contractor
+SECONDARY: Contractor, Deck builder, Shed builder, Landscape designer, Construction Company
+
+GBP SERVICES:
+- Custom fence construction
+- Fence installation
+- Wood fence installation
+- Fence repair
+- Fence replacement
+- Garden fence installation
+- Composite fencing installation
+- Chainlink fencing installation
+- Decking installation
+- Timber decking
+- Gate installation
+- Shed installation
+
+==================================================
+CRITICAL GAPS IDENTIFIED
+==================================================
+
+1. MISSING CATEGORY PAGES
+   ❌ Deck builder Irvine - NO PAGE EXISTS
+   ❌ Shed builder Irvine - NO PAGE EXISTS
+   ❌ Contractor Irvine - NO PAGE EXISTS
+   ❌ Landscape designer Irvine - NO PAGE EXISTS
+   ❌ Construction Company Irvine - NO PAGE EXISTS
+
+   Required format: Title tag = "[Category] Irvine | [Additional Context]"
+   Example: "Deck Builder Irvine | Professional Installation & Design"
+
+2. HOMEPAGE MISSING CATEGORY MENTIONS
+   ❌ Homepage does NOT mention "Deck builder"
+   ❌ Homepage does NOT mention "Shed builder"
+   ❌ Homepage does NOT mention "Contractor"
+   ❌ Homepage does NOT mention "Landscape designer"
+   ❌ Homepage does NOT mention "Construction Company"
+   
+   Current homepage only mentions: "Fencing, fence repairs, decking, gates, sheds, and garden rooms"
+   Missing category-specific language.
+
+3. HOMEPAGE MISSING INTERNAL LINKS TO CATEGORY PAGES
+   ❌ No link to /deck-builder-irvine (page doesn't exist)
+   ❌ No link to /shed-builder-irvine (page doesn't exist)
+   ❌ No link to /contractor-irvine (page doesn't exist)
+   ❌ No link to /landscape-designer-irvine (page doesn't exist)
+   ❌ No link to /construction-company-irvine (page doesn't exist)
+
+4. MISSING SERVICE PAGES
+   ❌ Custom fence construction Irvine - NO PAGE EXISTS
+   ❌ Wood fence installation Irvine - NO PAGE EXISTS
+   ❌ Fence replacement Irvine - NO PAGE EXISTS
+   ❌ Garden fence installation Irvine - NO PAGE EXISTS
+   ❌ Composite fencing installation Irvine - NO PAGE EXISTS
+   ❌ Chainlink fencing installation Irvine - NO PAGE EXISTS
+   ❌ Timber decking Irvine - NO PAGE EXISTS
+
+   Current service pages:
+   ✓ /service/fencing (exists but title tag wrong)
+   ✓ /service/fence-repairs (exists but title tag wrong)
+   ✓ /service/decking (exists but title tag wrong)
+   ✓ /service/gates (exists but title tag wrong)
+   ✓ /service/sheds (exists but title tag wrong)
+   ✓ /service/garden-rooms (exists but title tag wrong)
+
+5. INCORRECT SERVICE PAGE TITLE TAGS
+   ❌ /service/fencing - Current: "Service - Ayrshire Fencing Group"
+      Required: "Fence Installation Irvine | Professional Fencing Services"
+   
+   ❌ /service/fence-repairs - Current: "Service - Ayrshire Fencing Group"
+      Required: "Fence Repair Irvine | Expert Repair & Restoration"
+   
+   ❌ /service/decking - Current: "Service - Ayrshire Fencing Group"
+      Required: "Decking Installation Irvine | Professional Timber Decking"
+   
+   ❌ /service/gates - Current: "Service - Ayrshire Fencing Group"
+      Required: "Gate Installation Irvine | Garden & Security Gates"
+   
+   ❌ /service/sheds - Current: "Service - Ayrshire Fencing Group"
+      Required: "Shed Installation Irvine | Custom Shed Building"
+   
+   ❌ /service/garden-rooms - Current: "Service - Ayrshire Fencing Group"
+      Required: "Garden Rooms Irvine | Professional Installation"
+
+6. MISSING LINKS FROM CATEGORY PAGES TO SERVICE PAGES
+   ❌ Cannot verify - category pages don't exist yet
+   Once created, each category page must link to its assigned services:
+   
+   Deck builder page should link to:
+   - Decking Installation Irvine
+   - Timber Decking Irvine
+   
+   Shed builder page should link to:
+   - Shed Installation Irvine
+   
+   Fence contractor page should link to:
+   - Custom Fence Construction Irvine
+   - Fence Installation Irvine
+   - Wood Fence Installation Irvine
+   - Fence Repair Irvine
+   - Fence Replacement Irvine
+   - Garden Fence Installation Irvine
+   - Composite Fencing Installation Irvine
+   - Chainlink Fencing Installation Irvine
+   - Gate Installation Irvine
+
+==================================================
+SERVICE-TO-CATEGORY ASSIGNMENTS
+==================================================
+
+FENCE CONTRACTOR (PRIMARY) - /fence-contractor-irvine
+Services to link:
+- Custom Fence Construction Irvine
+- Fence Installation Irvine
+- Wood Fence Installation Irvine
+- Fence Repair Irvine
+- Fence Replacement Irvine
+- Garden Fence Installation Irvine
+- Composite Fencing Installation Irvine
+- Chainlink Fencing Installation Irvine
+- Gate Installation Irvine
+
+DECK BUILDER - /deck-builder-irvine
+Services to link:
+- Decking Installation Irvine
+- Timber Decking Irvine
+
+SHED BUILDER - /shed-builder-irvine
+Services to link:
+- Shed Installation Irvine
+
+CONTRACTOR - /contractor-irvine
+(Generic category - may not need dedicated services, but should mention all services)
+
+LANDSCAPE DESIGNER - /landscape-designer-irvine
+(Design-focused - may not need dedicated services, but should mention design services)
+
+CONSTRUCTION COMPANY - /construction-company-irvine
+(Generic category - may not need dedicated services, but should mention all services)
+
+==================================================
+REQUIRED ACTIONS
+==================================================
+
+PRIORITY 1 - CREATE CATEGORY PAGES:
+1. Create /deck-builder-irvine.astro
+   Title: "Deck Builder Irvine | Professional Installation & Design | Ayrshire Fencing Group"
+   Content: Mention decking services, link to decking installation and timber decking pages
+
+2. Create /shed-builder-irvine.astro
+   Title: "Shed Builder Irvine | Custom Shed Installation | Ayrshire Fencing Group"
+   Content: Mention shed services, link to shed installation page
+
+3. Create /fence-contractor-irvine.astro (or update existing /services page)
+   Title: "Fence Contractor Irvine | Professional Fencing Services | Ayrshire Fencing Group"
+   Content: Mention all fencing services, link to all fence-related service pages
+
+4. Create /contractor-irvine.astro (optional - generic category)
+   Title: "Contractor Irvine | Professional Construction Services | Ayrshire Fencing Group"
+
+5. Create /landscape-designer-irvine.astro (optional - design-focused)
+   Title: "Landscape Designer Irvine | Outdoor Design Services | Ayrshire Fencing Group"
+
+6. Create /construction-company-irvine.astro (optional - generic category)
+   Title: "Construction Company Irvine | Professional Builders | Ayrshire Fencing Group"
+
+PRIORITY 2 - CREATE MISSING SERVICE PAGES:
+1. Create /service/custom-fence-construction-irvine.astro
+   Title: "Custom Fence Construction Irvine | Bespoke Fencing Solutions | Ayrshire Fencing Group"
+
+2. Create /service/wood-fence-installation-irvine.astro
+   Title: "Wood Fence Installation Irvine | Professional Timber Fencing | Ayrshire Fencing Group"
+
+3. Create /service/fence-replacement-irvine.astro
+   Title: "Fence Replacement Irvine | Expert Fence Replacement Services | Ayrshire Fencing Group"
+
+4. Create /service/garden-fence-installation-irvine.astro
+   Title: "Garden Fence Installation Irvine | Garden Fencing Services | Ayrshire Fencing Group"
+
+5. Create /service/composite-fencing-installation-irvine.astro
+   Title: "Composite Fencing Installation Irvine | Low-Maintenance Fencing | Ayrshire Fencing Group"
+
+6. Create /service/chainlink-fencing-installation-irvine.astro
+   Title: "Chainlink Fencing Installation Irvine | Security Fencing | Ayrshire Fencing Group"
+
+7. Create /service/timber-decking-irvine.astro
+   Title: "Timber Decking Irvine | Professional Decking Installation | Ayrshire Fencing Group"
+
+PRIORITY 3 - UPDATE EXISTING SERVICE PAGE TITLE TAGS:
+1. Update /service/fencing - Title: "Fence Installation Irvine | Professional Fencing Services | Ayrshire Fencing Group"
+2. Update /service/fence-repairs - Title: "Fence Repair Irvine | Expert Repair & Restoration | Ayrshire Fencing Group"
+3. Update /service/decking - Title: "Decking Installation Irvine | Professional Timber Decking | Ayrshire Fencing Group"
+4. Update /service/gates - Title: "Gate Installation Irvine | Garden & Security Gates | Ayrshire Fencing Group"
+5. Update /service/sheds - Title: "Shed Installation Irvine | Custom Shed Building | Ayrshire Fencing Group"
+6. Update /service/garden-rooms - Title: "Garden Rooms Irvine | Professional Installation | Ayrshire Fencing Group"
+
+PRIORITY 4 - UPDATE HOMEPAGE:
+1. Add mentions of all secondary categories in homepage copy:
+   - "Professional fence contractor"
+   - "Expert deck builder"
+   - "Custom shed builder"
+   - "Experienced contractor"
+   - "Construction company"
+
+2. Add internal links to category pages in homepage content
+
+PRIORITY 5 - ADD INTERNAL LINKS:
+1. Each category page must link to its assigned service pages
+2. Service pages should link back to their category page
+3. Homepage should link to all category pages
+
+==================================================
+SUMMARY OF GAPS
+==================================================
+
+MISSING PAGES: 12
+- 5 category pages (Deck builder, Shed builder, Contractor, Landscape designer, Construction Company)
+- 7 service pages (Custom fence construction, Wood fence installation, Fence replacement, Garden fence installation, Composite fencing installation, Chainlink fencing installation, Timber decking)
+
+INCORRECT TITLE TAGS: 6
+- All existing service pages have generic "Service - Ayrshire Fencing Group" instead of "[Service] Irvine | [Context]"
+
+HOMEPAGE GAPS: 2
+- Missing category mentions
+- Missing internal links to category pages
+
+MISSING INTERNAL LINKS: Unknown
+- Cannot verify until category pages are created
+
+TOTAL ISSUES: 20+ critical SEO structure gaps
+
+
+

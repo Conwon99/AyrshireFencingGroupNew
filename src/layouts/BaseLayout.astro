@@ -1,0 +1,523 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  keywords?: string;
+  ogImage?: string;
+}
+
+const { title, description, canonical, keywords, ogImage } = Astro.props;
+
+// Canonical phone number for SEO and structured data
+const CANONICAL_PHONE = "07926 592704";
+const CANONICAL_PHONE_TEL = "+447926592704";
+
+// Default meta description (optimized to 120-160 characters)
+const defaultDescription = "Professional fencing and decking services in Ayrshire. Expert installation, quality materials, free quotes. Fully insured contractors with 13+ years experience.";
+
+// Default keywords
+const defaultKeywords = "fence contractor ayrshire, fencing ayrshire, decking ayrshire, fence installation ayrshire, fence repairs ayrshire, gates ayrshire, sheds ayrshire, garden rooms ayrshire, wooden fencing ayrshire, composite fencing ayrshire, chainlink fencing ayrshire, timber decking ayrshire, composite decking ayrshire, fencing glasgow, decking glasgow";
+
+// Generate canonical URL
+const siteUrl = "https://www.ayrshirefencinggroup.com";
+const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString();
+const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description || defaultDescription} />
+    <meta name="keywords" content={keywords || defaultKeywords} />
+    <meta name="author" content="Ayrshire Fencing Group" />
+    <meta name="language" content="English" />
+    <meta name="geo.region" content="GB-AYS" />
+    <meta name="geo.placename" content="Ayrshire, Scotland" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl} />
+    
+    <!-- Hreflang for UK targeting -->
+    <link rel="alternate" hreflang="en-gb" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={canonicalUrl} />
+    <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description || defaultDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={defaultOgImage} />
+    <meta property="og:site_name" content="Ayrshire Fencing Group" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description || defaultDescription} />
+    <meta name="twitter:image" content={defaultOgImage} />
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VV87ESBXDF"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VV87ESBXDF');
+    </script>
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": ["HomeAndConstructionBusiness", "ProfessionalService", "LocalBusiness"],
+      "name": "Ayrshire Fencing Group",
+      "description": "Fully qualified and insured fencing and decking specialists. Fencing, Fence Repairs, Decking, Gates, Sheds, Garden Rooms across Ayrshire. Over 13 years' experience.",
+      "telephone": CANONICAL_PHONE_TEL,
+      "email": "ayrshirefencinggroup@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "Irvine",
+        "addressRegion": "North Ayrshire",
+        "postalCode": "",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "55.6194",
+        "longitude": "-4.6551"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ayrshire"
+        },
+        {
+          "@type": "City",
+          "name": "Irvine"
+        },
+        {
+          "@type": "City",
+          "name": "Kilmarnock"
+        },
+        {
+          "@type": "City",
+          "name": "Ayr"
+        },
+        {
+          "@type": "City",
+          "name": "Troon"
+        },
+        {
+          "@type": "City",
+          "name": "Prestwick"
+        },
+        {
+          "@type": "City",
+          "name": "Kilwinning"
+        },
+        {
+          "@type": "City",
+          "name": "Glasgow"
+        }
+      ],
+      "serviceType": [
+        // Main Services
+        "Fencing",
+        "Fence repairs",
+        "Decking",
+        "Gates",
+        "Sheds",
+        "Garden rooms",
+        // Fence Contractor Services
+        "Custom fence construction",
+        "Wood fence installation",
+        "Wooden fencing",
+        "Fence replacement",
+        "Garden fence installation",
+        "Composite fencing installation",
+        "Composite fencing",
+        "Chainlink fencing installation",
+        "Chainlink fencing",
+        "Nylofor fencing",
+        "Concrete fencing",
+        "Fence design",
+        "Privacy fence installation",
+        "Security fencing and metal cage installation",
+        // Decking Services
+        "Timber decking",
+        "Composite decking",
+        "Wooden decking",
+        "Deck construction",
+        "Patio construction",
+        "Deck repair",
+        "Deck replacement",
+        "Deck design",
+        "Patio decks",
+        // Shed Services
+        "Cabin design and building",
+        "Custom shed design",
+        "Storage shed design and building",
+        // Landscape Services
+        "Landscape installations",
+        "Outdoor step construction",
+        "Patio design",
+        // Maintenance
+        "Repairs and maintenance"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Fencing, Decking, and Construction Services",
+        "itemListElement": [
+          // Main Services
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fencing",
+              "description": "Professional fencing installation services across Ayrshire and Glasgow"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fence repairs",
+              "description": "Expert fence repair and restoration services for all fence types"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Decking",
+              "description": "Professional decking installation using timber and composite materials"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gates",
+              "description": "Garden and security gate installation and design"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sheds",
+              "description": "Custom shed design and installation services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Garden rooms",
+              "description": "Professional garden room installation for additional living space"
+            }
+          },
+          // Fencing Services
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom fence construction",
+              "description": "Bespoke custom fence construction tailored to your specific needs"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wood fence installation",
+              "description": "Professional wood fence installation using quality timber"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wooden fencing",
+              "description": "High-quality wooden fencing installation with natural timber"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fence replacement",
+              "description": "Complete fence replacement services with removal and installation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Garden fence installation",
+              "description": "Garden fence installation for privacy and security"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Composite fencing installation",
+              "description": "Low-maintenance composite fencing installation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Composite fencing",
+              "description": "Durable composite fencing combining wood appearance with weather resistance"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Chainlink fencing installation",
+              "description": "Cost-effective chainlink fence installation for security and boundaries"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Chainlink fencing",
+              "description": "Practical chainlink fencing with excellent visibility and security"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nylofor fencing",
+              "description": "Modern nylofor fencing with excellent privacy and weather resistance"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Concrete fencing",
+              "description": "Durable concrete fencing for maximum security and longevity"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fence design",
+              "description": "Professional fence design services to create the perfect solution"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Privacy fence installation",
+              "description": "Privacy fence installation for seclusion and security"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Security fencing and metal cage installation",
+              "description": "High-security fencing and metal cage installation for maximum protection"
+            }
+          },
+          // Decking Services
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Timber decking",
+              "description": "High-quality timber decking installation with natural wood beauty"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Composite decking",
+              "description": "Low-maintenance composite decking that maintains appearance for years"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wooden decking",
+              "description": "Premium wooden decking with natural beauty and warmth"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deck construction",
+              "description": "Professional deck construction services from design to completion"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Patio construction",
+              "description": "Expert patio construction and installation services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deck repair",
+              "description": "Expert deck repair services for damaged or worn decking"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deck replacement",
+              "description": "Complete deck replacement services with removal and new installation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deck design",
+              "description": "Custom deck design services tailored to your space and needs"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Patio decks",
+              "description": "Patio deck installation that integrates with your patio area"
+            }
+          },
+          // Shed Services
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cabin design and building",
+              "description": "Custom cabin design and building services for various uses"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom shed design",
+              "description": "Bespoke custom shed design services tailored to your requirements"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Storage shed design and building",
+              "description": "Custom storage shed design and building for practical storage solutions"
+            }
+          },
+          // Landscape Services
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Landscape installations",
+              "description": "Professional landscape installation services including paths and hardscaping"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Outdoor step construction",
+              "description": "Expert outdoor step construction and installation for safe access"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Patio design",
+              "description": "Professional patio design services for outdoor living spaces"
+            }
+          },
+          // Maintenance
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Repairs and maintenance",
+              "description": "Comprehensive repairs and maintenance services for outdoor structures"
+            }
+          }
+        ]
+      },
+      "url": Astro.url.origin,
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "24",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Nicole Saunders"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Brilliant service and an amazing job completed. Would highly recommend!"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "foundingDate": "2011",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": "5-10"
+      }
+    })} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+

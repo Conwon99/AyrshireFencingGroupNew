@@ -1,0 +1,35 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/sections/Hero";
+import { ExperienceSection } from "@/sections/ExperienceSection";
+import { ServicesSection } from "@/sections/ServicesSection";
+import { HomepageContentSection } from "@/sections/HomepageContentSection";
+import { ServiceAreasSection } from "@/sections/ServiceAreasSection";
+import { ProjectsSection } from "@/sections/ProjectsSection";
+import { ReviewsSection } from "@/sections/ReviewsSection";
+import { VideoSection } from "@/sections/VideoSection";
+import { FAQSection } from "@/sections/FAQSection";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout 
+  title="Fence Contractor in Ayrshire | Ayrshire Fencing Group - Quality Fencing & Decking Services"
+  description="Professional fence contractor in Ayrshire & Glasgow. Expert fencing, decking, gates, sheds & garden rooms installation. Fully qualified, insured, 13+ years experience. Free quotes available."
+  canonical="https://www.ayrshirefencinggroup.com/"
+>
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:load />
+      <Hero client:load />
+      <ExperienceSection client:load />
+      <ServicesSection client:load />
+      <ProjectsSection client:load />
+      <ReviewsSection client:load />
+      <VideoSection client:load />
+      <FAQSection client:load />
+      <CTASection client:load />
+      <Footer client:load />
+    </div>
+</BaseLayout>
+

@@ -1,0 +1,169 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/pages/service/sections/Hero";
+import { ServiceDetail } from "@/pages/service/sections/ServiceDetail";
+import { ReviewsSection } from "@/sections/ReviewsSection";
+import { ServicesSection } from "@/pages/service/sections/ServicesSection";
+import { ServiceProjectsSection } from "@/pages/service/sections/ProjectsSection";
+import { FAQ } from "@/pages/service/sections/FAQ";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+
+export async function getStaticPaths() {
+  return [
+    { params: { slug: "fencing" } },
+    { params: { slug: "fence-repairs" } },
+    { params: { slug: "decking" } },
+    { params: { slug: "gates" } },
+    { params: { slug: "sheds" } },
+    { params: { slug: "garden-rooms" } },
+    { params: { slug: "custom-fence-construction-irvine" } },
+    { params: { slug: "wood-fence-installation-irvine" } },
+    { params: { slug: "fence-replacement-irvine" } },
+    { params: { slug: "garden-fence-installation-irvine" } },
+    { params: { slug: "composite-fencing-installation-irvine" } },
+    { params: { slug: "chainlink-fencing-installation-irvine" } },
+    { params: { slug: "timber-decking-irvine" } },
+    // Decking sub-pages
+    { params: { slug: "composite-decking-irvine" } },
+    { params: { slug: "wooden-decking-irvine" } },
+    // Fencing sub-pages
+    { params: { slug: "wooden-fencing-irvine" } },
+    { params: { slug: "composite-fencing-irvine" } },
+    { params: { slug: "chainlink-fencing-irvine" } },
+    { params: { slug: "nylofor-fencing-irvine" } },
+    { params: { slug: "concrete-fencing-irvine" } },
+    // Additional services
+    { params: { slug: "fence-design-irvine" } },
+    { params: { slug: "privacy-fence-installation-irvine" } },
+    { params: { slug: "security-fencing-and-metal-cage-installation-irvine" } },
+    { params: { slug: "deck-construction-irvine" } },
+    { params: { slug: "patio-construction-irvine" } },
+    { params: { slug: "deck-repair-irvine" } },
+    { params: { slug: "deck-replacement-irvine" } },
+    { params: { slug: "deck-design-irvine" } },
+    { params: { slug: "patio-decks-irvine" } },
+    { params: { slug: "cabin-design-and-building-irvine" } },
+    { params: { slug: "custom-shed-design-irvine" } },
+    { params: { slug: "storage-shed-design-and-building-irvine" } },
+    { params: { slug: "landscape-installations-irvine" } },
+    { params: { slug: "outdoor-step-construction-irvine" } },
+    { params: { slug: "patio-design-irvine" } },
+    { params: { slug: "repairs-and-maintenance-irvine" } },
+  ];
+}
+
+const { slug } = Astro.params;
+
+// Generate title based on slug
+const getTitle = (slug: string | undefined) => {
+  const titleMap: Record<string, string> = {
+    "fencing": "Fence Installation Ayrshire | Professional Fencing Services | Ayrshire Fencing Group",
+    "fence-repairs": "Fence Repair Ayrshire | Expert Repair & Restoration | Ayrshire Fencing Group",
+    "decking": "Decking Installation Ayrshire | Professional Timber Decking | Ayrshire Fencing Group",
+    "gates": "Gate Installation Ayrshire | Garden & Security Gates | Ayrshire Fencing Group",
+    "sheds": "Shed Installation Ayrshire | Custom Shed Building | Ayrshire Fencing Group",
+    "garden-rooms": "Garden Rooms Ayrshire | Professional Installation | Ayrshire Fencing Group",
+    "custom-fence-construction-irvine": "Custom Fence Construction Ayrshire | Bespoke Fencing Solutions | Ayrshire Fencing Group",
+    "wood-fence-installation-irvine": "Wood Fence Installation Ayrshire | Professional Timber Fencing | Ayrshire Fencing Group",
+    "fence-replacement-irvine": "Fence Replacement Ayrshire | Expert Fence Replacement Services | Ayrshire Fencing Group",
+    "garden-fence-installation-irvine": "Garden Fence Installation Ayrshire | Garden Fencing Services | Ayrshire Fencing Group",
+    "composite-fencing-installation-irvine": "Composite Fencing Installation Ayrshire | Low-Maintenance Fencing | Ayrshire Fencing Group",
+    "chainlink-fencing-installation-irvine": "Chainlink Fencing Installation Ayrshire | Security Fencing | Ayrshire Fencing Group",
+    "timber-decking-irvine": "Timber Decking Ayrshire | Professional Decking Installation | Ayrshire Fencing Group",
+    // Decking sub-pages
+    "composite-decking-irvine": "Composite Decking Ayrshire | Professional Installation & Design | Ayrshire Fencing Group",
+    "wooden-decking-irvine": "Wooden Decking Ayrshire | Professional Timber Decking | Ayrshire Fencing Group",
+    // Fencing sub-pages
+    "wooden-fencing-irvine": "Wooden Fencing Ayrshire | Professional Timber Fencing | Ayrshire Fencing Group",
+    "composite-fencing-irvine": "Composite Fencing Ayrshire | Low-Maintenance Fencing | Ayrshire Fencing Group",
+    "chainlink-fencing-irvine": "Chainlink Fencing Ayrshire | Security Fencing | Ayrshire Fencing Group",
+    "nylofor-fencing-irvine": "Nylofor Fencing Ayrshire | Modern Privacy Fencing | Ayrshire Fencing Group",
+    "concrete-fencing-irvine": "Concrete Fencing Ayrshire | Durable Security Fencing | Ayrshire Fencing Group",
+    "fence-design-irvine": "Fence Design Ayrshire | Professional Design Services | Ayrshire Fencing Group",
+    "privacy-fence-installation-irvine": "Privacy Fence Installation Ayrshire | Professional Installation | Ayrshire Fencing Group",
+    "security-fencing-and-metal-cage-installation-irvine": "Security Fencing and Metal Cage Installation Ayrshire | Professional Installation | Ayrshire Fencing Group",
+    "deck-construction-irvine": "Deck Construction Ayrshire | Professional Construction | Ayrshire Fencing Group",
+    "patio-construction-irvine": "Patio Construction Ayrshire | Professional Construction | Ayrshire Fencing Group",
+    "deck-repair-irvine": "Deck Repair Ayrshire | Professional Repair Services | Ayrshire Fencing Group",
+    "deck-replacement-irvine": "Deck Replacement Ayrshire | Professional Replacement Services | Ayrshire Fencing Group",
+    "deck-design-irvine": "Deck Design Ayrshire | Professional Design Services | Ayrshire Fencing Group",
+    "patio-decks-irvine": "Patio Decks Ayrshire | Professional Installation | Ayrshire Fencing Group",
+    "cabin-design-and-building-irvine": "Cabin Design and Building Ayrshire | Professional Services | Ayrshire Fencing Group",
+    "custom-shed-design-irvine": "Custom Shed Design Ayrshire | Professional Design Services | Ayrshire Fencing Group",
+    "storage-shed-design-and-building-irvine": "Storage Shed Design and Building Ayrshire | Professional Services | Ayrshire Fencing Group",
+    "landscape-installations-irvine": "Landscape Installations Ayrshire | Professional Installation | Ayrshire Fencing Group",
+    "outdoor-step-construction-irvine": "Outdoor Step Construction Ayrshire | Professional Construction | Ayrshire Fencing Group",
+    "patio-design-irvine": "Patio Design Ayrshire | Professional Design Services | Ayrshire Fencing Group",
+    "repairs-and-maintenance-irvine": "Repairs and Maintenance Ayrshire | Professional Maintenance Services | Ayrshire Fencing Group",
+  };
+  return titleMap[slug || ""] || "Service - Ayrshire Fencing Group";
+};
+
+// Generate meta description based on slug (optimized to 120-160 characters)
+const getDescription = (slug: string | undefined) => {
+  const descriptionMap: Record<string, string> = {
+    "fencing": "Professional fence installation in Ayrshire & Glasgow. Expert contractors, 13+ years experience. Quality materials, free quotes, fully insured.",
+    "fence-repairs": "Expert fence repair services in Ayrshire. Fast, reliable repairs for all fence types. Fully qualified contractors, free quotes, 13+ years experience.",
+    "decking": "Professional decking installation in Ayrshire & Glasgow. High-quality timber and composite decking. Expert installation, free quotes, 13+ years experience.",
+    "gates": "Gate installation services in Ayrshire. Garden gates, security gates, and custom solutions. Professional installation, quality materials, free quotes.",
+    "sheds": "Custom shed building and installation in Ayrshire. Professional construction services. Quality materials, expert craftsmanship, free quotes available.",
+    "garden-rooms": "Garden room installation in Ayrshire & Glasgow. Professional construction for versatile spaces. Expert installation, free quotes, 13+ years experience.",
+    "custom-fence-construction-irvine": "Custom fence construction in Ayrshire. Bespoke fencing solutions tailored to your needs. Professional installation, quality materials, free quotes.",
+    "wood-fence-installation-irvine": "Wood fence installation in Ayrshire. Professional timber fencing services. Natural, beautiful solutions. Expert installation, free quotes.",
+    "fence-replacement-irvine": "Fence replacement services in Ayrshire. Complete removal and professional installation. Long-lasting solutions, expert craftsmanship, free quotes.",
+    "garden-fence-installation-irvine": "Garden fence installation in Ayrshire. Perfect balance of privacy, security, and visual appeal. Professional installation, quality materials.",
+    "composite-fencing-installation-irvine": "Composite fencing installation in Ayrshire. Low-maintenance fencing with wood-like appearance. Enhanced weather resistance, professional installation.",
+    "chainlink-fencing-installation-irvine": "Chainlink fencing installation in Ayrshire. Cost-effective security solutions. Excellent visibility, strong boundaries. Professional installation, free quotes.",
+    "timber-decking-irvine": "Timber decking installation in Ayrshire. High-quality timber decking solutions. Professional installation, expert craftsmanship, free quotes available.",
+    "wooden-fencing-irvine": "Wooden fencing installation in Ayrshire. Professional timber fencing with natural beauty. Customizable solutions, expert installation, free quotes.",
+    "composite-fencing-irvine": "Composite fencing in Ayrshire. Low-maintenance fencing combining wood appearance with weather resistance. Professional installation, free quotes.",
+    "chainlink-fencing-irvine": "Chainlink fencing in Ayrshire. Cost-effective security fencing with excellent visibility. Strong boundaries, professional installation, free quotes.",
+    "nylofor-fencing-irvine": "Nylofor fencing installation in Ayrshire. Modern privacy fencing with excellent weather resistance. Contemporary appearance, professional installation.",
+    "concrete-fencing-irvine": "Concrete fencing installation in Ayrshire. Maximum durability and security. Minimal maintenance, professional installation for residential and commercial.",
+    "composite-decking-irvine": "Composite decking installation in Ayrshire. Low-maintenance decking that maintains appearance for years. Professional installation, expert craftsmanship.",
+    "wooden-decking-irvine": "Wooden decking installation in Ayrshire. Premium timber decking with natural beauty. Professional installation, quality materials, free quotes.",
+    "fence-design-irvine": "Fence design services in Ayrshire. Professional design consultation for custom fencing solutions. Expert planning, quality materials, free quotes.",
+    "privacy-fence-installation-irvine": "Privacy fence installation in Ayrshire. Professional privacy fencing solutions. Quality materials, expert installation, free quotes.",
+    "security-fencing-and-metal-cage-installation-irvine": "Security fencing and metal cage installation in Ayrshire. Maximum security solutions for commercial and industrial properties. Professional installation, free quotes.",
+    "deck-construction-irvine": "Deck construction in Ayrshire. Professional deck building from scratch. Quality materials, expert craftsmanship, free quotes available.",
+    "patio-construction-irvine": "Patio construction in Ayrshire. Professional patio building services. Quality materials, proper base preparation, free quotes.",
+    "deck-repair-irvine": "Deck repair services in Ayrshire. Professional repair for damaged decks. Fast, reliable service, free quotes, 13+ years experience.",
+    "deck-replacement-irvine": "Deck replacement in Ayrshire. Complete deck removal and installation. Quality materials, expert installation, free quotes.",
+    "deck-design-irvine": "Deck design services in Ayrshire. Professional deck design consultation. Custom solutions, expert planning, free quotes.",
+    "patio-decks-irvine": "Patio deck installation in Ayrshire. Decks that integrate with your patio area. Professional installation, quality materials, free quotes.",
+    "cabin-design-and-building-irvine": "Cabin design and building in Ayrshire. Custom cabin construction for various uses. Professional design and building, free quotes.",
+    "custom-shed-design-irvine": "Custom shed design in Ayrshire. Professional shed design services. Tailored solutions, expert planning, free quotes.",
+    "storage-shed-design-and-building-irvine": "Storage shed design and building in Ayrshire. Professional storage solutions. Custom design and construction, free quotes.",
+    "landscape-installations-irvine": "Landscape installations in Ayrshire. Professional hard landscaping services. Paths, steps, planting areas, free quotes.",
+    "outdoor-step-construction-irvine": "Outdoor step construction in Ayrshire. Professional step building services. Safe, durable construction, free quotes.",
+    "patio-design-irvine": "Patio design services in Ayrshire. Professional patio design consultation. Custom solutions, expert planning, free quotes.",
+    "repairs-and-maintenance-irvine": "Repairs and maintenance services in Ayrshire. Professional maintenance for outdoor structures. Regular upkeep, free quotes.",
+  };
+  return descriptionMap[slug || ""] || "Professional fencing and decking services in Ayrshire. Expert installation, quality materials, free quotes, 13+ years experience.";
+};
+
+const pageTitle = getTitle(slug);
+const pageDescription = getDescription(slug);
+const canonicalUrl = `https://www.ayrshirefencinggroup.com/service/${slug}`;
+
+// Determine if we should show projects section and which category
+const showProjects = slug === "fencing" || slug === "fence-repairs" || slug === "decking";
+const projectCategory: "fencing" | "decking" = slug === "decking" ? "decking" : "fencing";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} canonical={canonicalUrl}>
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:load />
+      <Hero slug={slug} client:only="react" />
+      <ServiceDetail slug={slug} client:only="react" />
+      {showProjects && <ServiceProjectsSection category={projectCategory} limit={3} client:only="react" />}
+      <ReviewsSection client:load />
+      <ServicesSection slug={slug} client:only="react" />
+      <FAQ slug={slug} client:only="react" />
+      <CTASection client:load />
+      <Footer client:load />
+    </div>
+</BaseLayout>
+

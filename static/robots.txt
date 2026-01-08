@@ -1,0 +1,39 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.ayrshirefencinggroup.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /api/
+Disallow: /_astro/
+
+# Allow all service and location pages
+Allow: /service/
+Allow: /about
+Allow: /contact
+Allow: /projects/
+
+# Explicit crawler allowances
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Social media crawlers
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
+
