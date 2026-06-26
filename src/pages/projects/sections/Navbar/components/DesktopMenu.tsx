@@ -25,6 +25,12 @@ export const DesktopMenu = () => {
       >
         Services
       </a>
+      <a
+        href="/gallery"
+        className="relative text-gray-900 box-border caret-transparent block max-w-[1540px] min-h-0 min-w-0 text-left decoration-transparent underline decoration-2 underline-offset-[6px] align-top mx-0 my-2.5 md:min-h-[auto] md:min-w-[auto] md:mx-[25px] md:my-0 hover:decoration-gray-900"
+      >
+        Gallery
+      </a>
     </nav>
   );
 };
