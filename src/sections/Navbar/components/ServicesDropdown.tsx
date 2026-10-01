@@ -22,7 +22,7 @@ export const ServicesDropdown = ({ onCloseMobileMenu }: ServicesDropdownProps = 
     { name: "Fence Repairs", href: "/service/fence-repairs" },
     { name: "Decking", href: "/service/decking" },
     { name: "Gates", href: "/service/gates" },
-    { name: "Sheds", href: "/service/sheds" },
+    { name: "Sheds", href: "/shed-builder-irvine" },
     { name: "Garden Rooms", href: "/service/garden-rooms" },
   ];
 

@@ -1,0 +1,124 @@
+URL,Clicks (16m),Impressions (16m),Avg position,In sitemap,Action,301 target,Reason
+/,193,7450,13.57/22.4,yes,KEEP,,Homepage - top performer (193 clicks across www + non-www). Fix www/non-www split.
+/service/outdoor-step-construction-irvine,40,928,21.3/18.2,yes,KEEP,,"Winner (40 clicks, 4.9% CTR) - genuine niche. Keep (optionally move to /service/outdoor-steps with 301)."
+/shed-builder-irvine,37,2907,33.26/40,yes,KEEP,,Winner (51 clicks incl. .html variant). Keep as THE sheds page; merge /service/sheds into it.
+/service/gates,32,1442,24.7/20.62,yes,KEEP,,Winner (32 clicks). Absorb /kilmarnock/gates + /irvine/gates.
+/project/concrete-posts-composite-panels-gate,8,508,24.22/27.22,no,KEEP,,"Real case study - keep, add location/date/photos."
+/services,7,517,36.75/5.71,yes,KEEP,,Hub for the 6-8 real services.
+/contact,6,1055,40.52,yes,KEEP,,Core page.
+/project/timber-wheelchair-access-steps,6,107,16.53,no,KEEP,,"Real case study - keep, add location/date/photos."
+/service/patio-construction-irvine,5,2320,31.4,yes,KEEP,,"2,320 impr, ~2k impr of patio queries. Keep as THE patio page (optionally /service/patios with 301)."
+/about,5,675,30.92,yes,KEEP,,Core trust page.
+/service/decking,4,2368,51.94/61.19,yes,KEEP,,"Core money page - absorb decking sub-pages. 1,800+ impr for ""decking ayrshire"" at pos 34: needs depth, not more URLs."
+/project/timber-decking,4,2035,37.59,no,KEEP,,"Real case study - keep, add location/date/photos."
+/project/composite-decking-glass-handrails,4,821,26.91,no,KEEP,,"Real case study - keep, add location/date/photos."
+/project/venetian-fencing-gate,4,429,39.24,no,KEEP,,"Real case study - keep, add location/date/photos."
+/fencing-projects,3,265,51.14,no,KEEP,,Keep or fold into /projects.
+/decking-projects,1,875,52.56,no,KEEP,,Keep or fold into /projects.
+/service/fencing,1,373,37.93,yes,KEEP,,Core money page - absorb all fencing-type sub-pages and /town/fencing pages.
+/projects,0,216,43.96,yes,KEEP,,Real project evidence - strongest anti-spam signal.
+/project/composite-fencing-bespoke-gates,0,114,46.75,no,KEEP,,"Real case study - keep, add location/date/photos."
+/service/fence-repairs,0,0,,yes,KEEP,,Core - absorb repairs-and-maintenance + town fence-repair pages.
+/service/garden-rooms,0,0,,yes,KEEP,,Core - absorb town garden-room pages.
+/project/wooden-gate-and-fencing,0,0,,yes,KEEP,,"Real case study - keep, add location/date/photos."
+/project/fencing-project-two,0,0,,yes,KEEP,,"Real case study - keep, add location/date/photos."
+/project/wooden-fencing,0,0,,yes,KEEP,,"Real case study - keep, add location/date/photos."
+/project/decking-project-four,0,0,,yes,KEEP,,"Real case study - keep, add location/date/photos."
+/project/decking-project-five,0,0,,yes,KEEP,,"Real case study - keep, add location/date/photos."
+/project/decking-project-six,0,0,,yes,KEEP,,"Real case study - keep, add location/date/photos."
+/kilmarnock/gates,16,525,14.37,no,301,/service/gates,Has some clicks/links - consolidate into parent.
+/shed-builder-irvine.html,14,1360,23.52,no,301,/shed-builder-irvine,Has some clicks/links - consolidate into parent.
+/irvine/fencing,7,757,20.45,no,301,/service/fencing,Has some clicks/links - consolidate into parent.
+/service/sheds,5,533,42.2,yes,301,/shed-builder-irvine,Has some clicks/links - consolidate into parent.
+/service/repairs-and-maintenance-irvine,4,384,32.95,yes,301,/service/fence-repairs,Has some clicks/links - consolidate into parent.
+/service/timber-decking-irvine,3,1554,58.67,yes,301,/service/decking,Keyword-variant page with minor clicks - merge content + 301.
+/service/landscape-installations-irvine,3,316,39.12,yes,301,/service/patio-construction-irvine,Has some clicks/links - consolidate into parent.
+/irvine/gates,3,82,15.44,no,301,/service/gates,Has some clicks/links - consolidate into parent.
+/saltcoats,3,78,8.6,no,301,/,Town-swap page with a trickle of clicks - 301 to service page.
+/irvine,3,73,13.88,no,301,/,Town-swap page with a trickle of clicks - 301 to service page.
+/ayr,2,164,35.31,no,301,/,Town-swap page with a trickle of clicks - 301 to service page.
+/kilwinning/fence-repairs,2,40,29.3,no,301,/service/fence-repairs,Town-swap page with a trickle of clicks - 301 to service page.
+/service/chainlink-fencing-irvine,2,21,17.14,yes,301,/service/fencing,Keyword-variant page with minor clicks - merge content + 301.
+/irvine/decking,1,132,59.67,no,301,/service/decking,Town-swap page with a trickle of clicks - 301 to service page.
+/largs,1,76,7.09,no,301,/,Town-swap page with a trickle of clicks - 301 to service page.
+/kilmarnock,1,51,27.45,no,301,/,Town-swap page with a trickle of clicks - 301 to service page.
+/service/security-fencing-and-metal-cage-installation-irvine,1,33,19.24,yes,301,/service/fencing,Keyword-variant page with minor clicks - merge content + 301.
+/troon/fence-repairs,1,28,8.96,no,301,/service/fence-repairs,Town-swap page with a trickle of clicks - 301 to service page.
+/prestwick/sheds,1,20,15.75,no,301,/shed-builder-irvine,Town-swap page with a trickle of clicks - 301 to service page.
+/service/deck-repair-irvine,1,13,12.15,yes,301,/service/decking,Keyword-variant page with minor clicks - merge content + 301.
+/largs/decking,1,9,22.56,no,301,/service/decking,Town-swap page with a trickle of clicks - 301 to service page.
+/fence-contractor-irvine,0,0,,yes,301,/service/fencing,Has some clicks/links - consolidate into parent.
+/deck-builder-irvine,0,0,,yes,301,/service/decking,Has some clicks/links - consolidate into parent.
+/garage-builder-irvine,0,0,,yes,301,/shed-builder-irvine,Has some clicks/links - consolidate into parent.
+/service/wooden-decking-irvine,0,224,42.57,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/troon/garden-rooms,0,102,26.25,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/service/patio-decks-irvine,0,101,51.3,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/largs/garden-rooms,0,69,17.97,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/irvine/garden-rooms,0,60,43.05,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/service/custom-fence-construction-irvine,0,51,53.51,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/prestwick,0,49,17.49,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/kilwinning/garden-rooms,0,49,23.51,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/ardrossan/fence-repairs,0,46,22.65,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/service/custom-shed-design-irvine,0,43,51.49,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/service/composite-fencing-installation-irvine,0,40,70.38,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/service/storage-shed-design-and-building-irvine,0,39,36.72,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/ardrossan,0,30,12.43,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/stevenston/fencing,0,30,34.67,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/service/composite-fencing-irvine,0,29,56.76,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/service/fence-replacement-irvine,0,27,38.93,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/service/deck-design-irvine,0,26,42.15,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/kilmarnock/sheds,0,25,23.84,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/troon/fencing,0,24,10,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/largs/sheds,0,24,24.29,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/service/concrete-fencing-irvine,0,23,23.48,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/kilmarnock/decking,0,23,31.3,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/ayr/fencing,0,21,23.95,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/service/chainlink-fencing-installation-irvine,0,21,36.95,no,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/service/fence-design-irvine,0,20,66.3,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/kilmarnock/fencing,0,17,31.53,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/stevenston/sheds,0,15,9.73,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/service/wood-fence-installation-irvine,0,10,41.9,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/saltcoats/fencing,0,9,14.44,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/service/cabin-design-and-building-irvine,0,9,21.78,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/service/nylofor-fencing-irvine,0,9,24.67,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/service/garden-fence-installation-irvine,0,9,43,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/kilwinning/sheds,0,7,5.71,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/saltcoats/fence-repairs,0,7,12.57,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/largs/fence-repairs,0,7,16,no,REMOVE (410),,Town x service doorway page - 0 clicks in 16 months.
+/contractor-irvine,0,0,,yes,REMOVE (410),,"GBP-category doorway page; thin, near-duplicate. ""Landscape architect"" is also a protected title."
+/general-contractor-irvine,0,0,,yes,REMOVE (410),,"GBP-category doorway page; thin, near-duplicate. ""Landscape architect"" is also a protected title."
+/landscape-designer-irvine,0,0,,yes,REMOVE (410),,"GBP-category doorway page; thin, near-duplicate. ""Landscape architect"" is also a protected title."
+/landscape-architect-irvine,0,0,,yes,REMOVE (410),,"GBP-category doorway page; thin, near-duplicate. ""Landscape architect"" is also a protected title."
+/construction-company-irvine,0,0,,yes,REMOVE (410),,"GBP-category doorway page; thin, near-duplicate. ""Landscape architect"" is also a protected title."
+/service/aluminium-fence-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/chain-link-fence-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/deer-fencing-and-ranch-rail-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/dog-fence-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/fence-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/iron-fence-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/pool-fence-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/privacy-fence-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/service/vinyl-fence-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/fence-repair-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/concrete-fence-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/decorative-panels-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/domestic-and-commercial-fencing-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/metal-fencing-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/metal-fence-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/gate-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/deck-construction-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/service/composite-decks-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/deck-cleaning-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/deck-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/deck-painting-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/deck-railing-repair-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/deck-refinishing-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/deck-remodelling-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/deck-replacement-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/service/shed-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/patio-design-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/service/garden-room-installation-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks. NOT BUILT by repo - sitemap points at a 404."
+/service/composite-decking-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/service/wooden-fencing-irvine,0,0,,yes,REMOVE (410),,"Keyword-variant / near-duplicate service page, 0 clicks."
+/projects/project-1.webp,0,2,19.5,no,IGNORE,,Image URL indexed as page - no action.
+/projects/project-3.webp,0,1,4,no,IGNORE,,Image URL indexed as page - no action.

@@ -1,5 +1,8 @@
-# Netlify redirects file
-# This ensures all routes work correctly
+# Netlify redirects
+#
+# Spam update cleanup (Oct 2026) - see seo-recovery/spam-update-recovery-plan.md
+# Rules only fire when no built page exists at the path, so live pages are never shadowed.
+# Order matters: first match wins, so specific 301s sit above the catch-all 410s.
 
 # Ensure robots.txt and sitemap.xml are accessible
 /robots.txt   /robots.txt   200
@@ -10,3 +13,103 @@
 /admin/*      /index.html   404
 /api/*        /index.html   404
 
+# --- 301: consolidate pages that earned clicks into the page that now covers them ---
+/kilmarnock/gates                                             /service/gates                          301
+/irvine/fencing                                               /service/fencing                        301
+/service/sheds                                                /shed-builder-irvine                    301
+/service/repairs-and-maintenance-irvine                       /service/fence-repairs                  301
+/service/timber-decking-irvine                                /service/decking                        301
+/service/landscape-installations-irvine                       /service/patio-construction-irvine      301
+/irvine/gates                                                 /service/gates                          301
+/saltcoats                                                    /                                       301
+/irvine                                                       /                                       301
+/ayr                                                          /                                       301
+/kilwinning/fence-repairs                                     /service/fence-repairs                  301
+/service/chainlink-fencing-irvine                             /service/fencing                        301
+/irvine/decking                                               /service/decking                        301
+/largs                                                        /                                       301
+/kilmarnock                                                   /                                       301
+/service/security-fencing-and-metal-cage-installation-irvine  /service/fencing                        301
+/troon/fence-repairs                                          /service/fence-repairs                  301
+/prestwick/sheds                                              /shed-builder-irvine                    301
+/service/deck-repair-irvine                                   /service/decking                        301
+/largs/decking                                                /service/decking                        301
+/fence-contractor-irvine                                      /service/fencing                        301
+/deck-builder-irvine                                          /service/decking                        301
+/garage-builder-irvine                                        /shed-builder-irvine                    301
+
+# --- 410: removed doorway / keyword-variant pages ---
+/service/wooden-decking-irvine                            /404.html  410
+/service/patio-decks-irvine                               /404.html  410
+/service/custom-fence-construction-irvine                 /404.html  410
+/service/custom-shed-design-irvine                        /404.html  410
+/service/composite-fencing-installation-irvine            /404.html  410
+/service/storage-shed-design-and-building-irvine          /404.html  410
+/service/composite-fencing-irvine                         /404.html  410
+/service/fence-replacement-irvine                         /404.html  410
+/service/deck-design-irvine                               /404.html  410
+/service/concrete-fencing-irvine                          /404.html  410
+/service/chainlink-fencing-installation-irvine            /404.html  410
+/service/fence-design-irvine                              /404.html  410
+/service/wood-fence-installation-irvine                   /404.html  410
+/service/cabin-design-and-building-irvine                 /404.html  410
+/service/nylofor-fencing-irvine                           /404.html  410
+/service/garden-fence-installation-irvine                 /404.html  410
+/contractor-irvine                                        /404.html  410
+/general-contractor-irvine                                /404.html  410
+/landscape-designer-irvine                                /404.html  410
+/landscape-architect-irvine                               /404.html  410
+/construction-company-irvine                              /404.html  410
+/service/aluminium-fence-installation-irvine              /404.html  410
+/service/chain-link-fence-installation-irvine             /404.html  410
+/service/deer-fencing-and-ranch-rail-installation-irvine  /404.html  410
+/service/dog-fence-installation-irvine                    /404.html  410
+/service/fence-installation-irvine                        /404.html  410
+/service/iron-fence-installation-irvine                   /404.html  410
+/service/pool-fence-installation-irvine                   /404.html  410
+/service/privacy-fence-installation-irvine                /404.html  410
+/service/vinyl-fence-installation-irvine                  /404.html  410
+/service/fence-repair-irvine                              /404.html  410
+/service/concrete-fence-installation-irvine               /404.html  410
+/service/decorative-panels-irvine                         /404.html  410
+/service/domestic-and-commercial-fencing-irvine           /404.html  410
+/service/metal-fencing-irvine                             /404.html  410
+/service/metal-fence-installation-irvine                  /404.html  410
+/service/gate-installation-irvine                         /404.html  410
+/service/deck-construction-irvine                         /404.html  410
+/service/composite-decks-irvine                           /404.html  410
+/service/deck-cleaning-irvine                             /404.html  410
+/service/deck-installation-irvine                         /404.html  410
+/service/deck-painting-irvine                             /404.html  410
+/service/deck-railing-repair-irvine                       /404.html  410
+/service/deck-refinishing-irvine                          /404.html  410
+/service/deck-remodelling-irvine                          /404.html  410
+/service/deck-replacement-irvine                          /404.html  410
+/service/shed-installation-irvine                         /404.html  410
+/service/patio-design-irvine                              /404.html  410
+/service/garden-room-installation-irvine                  /404.html  410
+/service/composite-decking-irvine                         /404.html  410
+/service/wooden-fencing-irvine                            /404.html  410
+/project/wooden-gate-and-fencing                          /404.html  410
+/project/fencing-project-two                              /404.html  410
+/project/wooden-fencing                                   /404.html  410
+/project/decking-project-four                             /404.html  410
+/project/decking-project-five                             /404.html  410
+/project/decking-project-six                              /404.html  410
+
+# --- 410: every other town / town x service page ---
+/troon                                                    /404.html  410
+/kilwinning                                               /404.html  410
+/stevenston                                               /404.html  410
+/prestwick                                                /404.html  410
+/ardrossan                                                /404.html  410
+/kilmarnock/*                                             /404.html  410
+/irvine/*                                                 /404.html  410
+/saltcoats/*                                              /404.html  410
+/ayr/*                                                    /404.html  410
+/largs/*                                                  /404.html  410
+/kilwinning/*                                             /404.html  410
+/troon/*                                                  /404.html  410
+/prestwick/*                                              /404.html  410
+/ardrossan/*                                              /404.html  410
+/stevenston/*                                             /404.html  410

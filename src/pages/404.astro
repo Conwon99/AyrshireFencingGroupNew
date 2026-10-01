@@ -1,0 +1,32 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout
+  title="Page Not Found | Ayrshire Fencing Group"
+  description="This page no longer exists. See our fencing, gates, decking and shed services across Ayrshire."
+  noindex
+>
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:load />
+      <section class="box-border caret-transparent py-24 md:py-32">
+        <div class="box-border caret-transparent max-w-[900px] mx-auto px-[15px] md:px-[30px] text-center text-white">
+          <h1 class="text-4xl font-bold mb-4 md:text-5xl">Page not found</h1>
+          <p class="text-lg md:text-xl mb-8 text-gray-200">
+            This page has been removed or moved. Have a look at what we do instead:
+          </p>
+          <ul class="flex flex-wrap justify-center gap-x-6 gap-y-3 list-none p-0 text-lg">
+            <li><a href="/service/fencing" class="text-[#8a9168] hover:underline">Fencing</a></li>
+            <li><a href="/service/gates" class="text-[#8a9168] hover:underline">Gates</a></li>
+            <li><a href="/service/decking" class="text-[#8a9168] hover:underline">Decking</a></li>
+            <li><a href="/shed-builder-irvine" class="text-[#8a9168] hover:underline">Sheds</a></li>
+            <li><a href="/projects" class="text-[#8a9168] hover:underline">Projects</a></li>
+            <li><a href="/contact" class="text-[#8a9168] hover:underline">Contact</a></li>
+          </ul>
+        </div>
+      </section>
+      <Footer client:load />
+    </div>
+</BaseLayout>
