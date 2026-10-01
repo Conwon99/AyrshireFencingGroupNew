@@ -105,7 +105,7 @@ export const ServicesSection = ({ slug }: ServicesSectionProps = {}) => {
       category: "gates"
     },
     {
-      href: "/service/sheds",
+      href: "/shed-builder-irvine",
       iconUrl: "https://c.animaapp.com/mial13ktyN5Jkh/assets/670f922ca00205c2937593ea_service-04.svg",
       iconAlt: "Sheds service icon",
       title: "Sheds",

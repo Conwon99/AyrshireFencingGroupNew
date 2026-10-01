@@ -7,9 +7,10 @@ interface Props {
   canonical?: string;
   keywords?: string;
   ogImage?: string;
+  noindex?: boolean;
 }
 
-const { title, description, canonical, keywords, ogImage } = Astro.props;
+const { title, description, canonical, keywords, ogImage, noindex = false } = Astro.props;
 
 // Canonical phone number for SEO and structured data
 const CANONICAL_PHONE = "07926 592704";
@@ -39,7 +40,7 @@ const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
     <meta name="language" content="English" />
     <meta name="geo.region" content="GB-AYS" />
     <meta name="geo.placename" content="Ayrshire, Scotland" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
     
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalUrl} />

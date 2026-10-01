@@ -35,7 +35,7 @@ export const ServicesSection = () => {
             description="Supply and installation of gates for all purposes. From garden gates to secure access gates, we provide quality gate solutions to match your needs."
           />
           <ServiceCard
-            href="/service/sheds"
+            href="/shed-builder-irvine"
             iconUrl="https://c.animaapp.com/mhqqhnhjBr0jWt/assets/670f922a0e27a271e441091e_service-03.svg"
             title="Sheds"
             description="Custom sheds designed and built to match your requirements. Professional installation of quality sheds for storage and garden use."

@@ -1,6 +1,4 @@
 import { PhoneLink } from "@/components/PhoneLink";
-import { HomepageContentSection } from "@/sections/HomepageContentSection";
-import { ServiceAreasSection } from "@/sections/ServiceAreasSection";
 
 export const Footer = () => {
   return (
@@ -155,10 +153,11 @@ export const Footer = () => {
           </div>
         </div>
         
-        {/* Dropdown Sections */}
+        {/* Areas covered - plain visible text, no location-page links */}
         <div className="box-border caret-transparent mt-10 pt-10 border-t border-white/20">
-          <HomepageContentSection />
-          <ServiceAreasSection />
+          <p className="text-white/80 text-sm box-border caret-transparent text-center max-w-3xl mx-auto">
+            Based in Irvine, covering North, East and South Ayrshire.
+          </p>
         </div>
         
         <div className="box-border caret-transparent border-t border-white/20 mt-10 pt-6 text-center">

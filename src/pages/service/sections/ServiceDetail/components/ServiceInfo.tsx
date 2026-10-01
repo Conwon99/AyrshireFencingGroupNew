@@ -118,10 +118,10 @@ export const ServiceInfo = ({ slug }: ServiceInfoProps = {}) => {
               className="box-border caret-transparent mt-[15px] mb-2.5 pl-5 md:mt-[20px]"
             >
               <li className="text-gray-200 box-border caret-transparent mb-3">
-                <strong><a href="/service/wooden-decking-irvine" className="text-[#787e59] hover:underline">Wooden Decking:</a></strong> Traditional and natural, wooden decking provides warmth and beauty. We use high-quality timber that can be customized to match your property's style.
+                <strong>Wooden Decking:</strong> Traditional and natural, wooden decking provides warmth and beauty. We use high-quality timber that can be customized to match your property's style.
               </li>
               <li className="text-gray-200 box-border caret-transparent mb-3">
-                <strong><a href="/service/composite-decking-irvine" className="text-[#787e59] hover:underline">Composite Decking:</a></strong> Low-maintenance and durable, composite decking combines the look of wood with enhanced weather resistance and minimal upkeep requirements.
+                <strong>Composite Decking:</strong> Low-maintenance and durable, composite decking combines the look of wood with enhanced weather resistance and minimal upkeep requirements.
               </li>
             </ul>
           </div>
@@ -136,19 +136,19 @@ export const ServiceInfo = ({ slug }: ServiceInfoProps = {}) => {
               className="box-border caret-transparent mt-[15px] mb-2.5 pl-5 md:mt-[20px]"
             >
               <li className="text-gray-200 box-border caret-transparent mb-3">
-                <strong><a href="/service/wooden-fencing-irvine" className="text-[#787e59] hover:underline">Wooden Fencing:</a></strong> Traditional and versatile, wooden fencing offers natural beauty and can be customized to match your property's style.
+                <strong>Wooden Fencing:</strong> Traditional and versatile, wooden fencing offers natural beauty and can be customized to match your property's style.
               </li>
               <li className="text-gray-200 box-border caret-transparent mb-3">
-                <strong><a href="/service/composite-fencing-irvine" className="text-[#787e59] hover:underline">Composite Fencing:</a></strong> Low-maintenance and durable, composite fencing combines the look of wood with enhanced weather resistance.
+                <strong>Composite Fencing:</strong> Low-maintenance and durable, composite fencing combines the look of wood with enhanced weather resistance.
               </li>
               <li className="text-gray-200 box-border caret-transparent mb-3">
-                <strong><a href="/service/chainlink-fencing-irvine" className="text-[#787e59] hover:underline">Chainlink Fencing:</a></strong> Cost-effective and practical, chainlink fencing provides security and visibility while maintaining boundaries.
+                <strong>Chainlink Fencing:</strong> Cost-effective and practical, chainlink fencing provides security and visibility while maintaining boundaries.
               </li>
               <li className="text-gray-200 box-border caret-transparent mb-3">
-                <strong><a href="/service/nylofor-fencing-irvine" className="text-[#787e59] hover:underline">Nylofor Fencing:</a></strong> Modern and secure, nylofor fencing offers excellent privacy and weather resistance with a contemporary appearance.
+                <strong>Nylofor Fencing:</strong> Modern and secure, nylofor fencing offers excellent privacy and weather resistance with a contemporary appearance.
               </li>
               <li className="text-gray-200 box-border caret-transparent mb-3">
-                <strong><a href="/service/concrete-fencing-irvine" className="text-[#787e59] hover:underline">Concrete Fencing:</a></strong> Maximum durability and security, concrete fencing provides long-lasting protection with minimal maintenance.
+                <strong>Concrete Fencing:</strong> Maximum durability and security, concrete fencing provides long-lasting protection with minimal maintenance.
               </li>
             </ul>
           </div>
